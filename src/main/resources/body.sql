@@ -1,16 +1,41 @@
-CREATE TABLE body(
+create table BodyParts
+(
 id serial primary key,
-name varchar(100),
-gifUrl varchar(500)
+name varchar(100) not null,
+urlgif varchar (300)
 );
-insert into body(name,gifUrl) values ('knee1','src/main/resources/Gif/knee1.gif');
-insert into body(name,gifUrl) values ('knee2','src/main/resources/Gif/knee2.gif');
-insert into body(name,gifUrl) values ('knee3','src/main/resources/Gif/knee3.gif');
-insert into body(name,gifUrl) values ('neek1','src/main/resources/Gif/neek1.gif');
-insert into body(name,gifUrl) values ('neek2','src/main/resources/Gif/neek2.gif');
-insert into body(name,gifUrl) values ('neek3','src/main/resources/Gif/neek3.gif');
-insert into body(name,gifUrl) values ('shoulder1''src/main/resources/Gif/shoulder1.gif');
-insert into body(name,gifUrl) values ('shoulder2''src/main/resources/Gif/shoulder2.gif');
+insert into BodyParts ( name, urlgif)
+values ( 'knee','src/main/resources/Gif/knee1.gif' );
+insert into BodyParts ( name, urlgif)
+values ( 'knee','src/main/resources/Gif/knee2.gif' );
+insert into BodyParts ( name, urlgif)
+values ( 'knee','src/main/resources/Gif/knee3.gif' );
+insert into BodyParts ( name, urlgif)
+values ( 'knee','src/main/resources/Gif/knee4.gif' );
+insert into BodyParts ( name, urlgif)
+values ( 'knee','src/main/resources/Gif/knee5.gif' );
+insert into BodyParts ( name, urlgif)
+values ( 'knee','src/main/resources/Gif/knee6.gif' );
+insert into BodyParts ( name, urlgif)
+values ( 'shoulder','src/main/resources/Gif/shoulder1.gif' );
+insert into BodyParts ( name, urlgif)
+values ( 'shoulder','src/main/resources/Gif/shoulder2.gif' );
+insert into BodyParts ( name, urlgif)
+values ( 'shoulder','src/main/resources/Gif/shoulder3.gif' );
+insert into BodyParts ( name, urlgif)
+values ( 'back','src/main/resources/Gif/back1.gif' );
+insert into BodyParts ( name, urlgif)
+values ( 'back','src/main/resources/Gif/back2.gif' );
+insert into BodyParts ( name, urlgif)
+values ( 'back', 'ssrc/main/resources/Gif/back3.gif');
+insert into BodyParts ( name, urlgif)
+values ( 'back', 'src/main/resources/Gif/back4.gif');
+insert into BodyParts ( name, urlgif)
+values ( 'neck', 'src/main/resources/Gif/neck1.gif');
+insert into BodyParts ( name, urlgif)
+values ( 'neck', 'src/main/resources/Gif/neck2.gif');
+insert into BodyParts ( name, urlgif)
+values ( 'neck', 'src/main/resources/Gif/neck3.gif');
 
 CREATE table image(
 id serial primary key,

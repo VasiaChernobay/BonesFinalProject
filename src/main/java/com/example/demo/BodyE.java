@@ -1,13 +1,22 @@
 package com.example.demo;
 
 public enum BodyE {
+    BACK1(10),
+    BACK2(11),
+    BACK3(12),
+    BACK4(13),
     KNEE1(1),
     KNEE2(2),
     KNEE3(3),
-    NEEK1(4),
-    NEEK2(5),
-    SHOULDER1(6),
-    SHOULDER2(7);
+    KNEE4(4),
+    KNEE5(5),
+    KNEE6(6),
+    NEEK1(14),
+    NEEK2(15),
+    NEEK3(16),
+    SHOULDER1(7),
+    SHOULDER2(8),
+    SHOULDER3(9);
  private int id;
 
     public int getId() {
