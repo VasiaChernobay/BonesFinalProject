@@ -1,6 +1,11 @@
 package com.example.demo;
 
 
+import com.example.demo.Body.BodyDaoIml;
+import com.example.demo.Body.BodyE;
+import com.example.demo.image.ImageDaoImpl;
+import com.example.demo.image.ImageE;
+import com.example.demo.ui.UISwing;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.swing.*;

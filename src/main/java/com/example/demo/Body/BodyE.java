@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.Body;
 
 public enum BodyE {
     BACK1(10),

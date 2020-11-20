@@ -14,7 +14,7 @@
 
         </bean>
 
-        <bean id ="bodyDAO" class="com.example.demo.BodyDaoIml">
+        <bean id ="bodyDAO" class="com.example.demo.Body.BodyDaoIml">
             <property name="dataSource1" ref="dataSourse"/>
             <property name="dataSource2" ref="dataSourse"/>
             <property name="dataSource3" ref="dataSourse"/>
@@ -35,7 +35,7 @@
             <property name="dataSource18" ref="dataSourse"/>
 
         </bean>
-    <bean id="imageDAO" class="com.example.demo.ImageDaoImpl">
+    <bean id="imageDAO" class="com.example.demo.image.ImageDaoImpl">
         <property name="dataSource" ref="dataSourse"/>
         <property name="dataSource2" ref="dataSourse"/>
         <property name="dataSource3" ref="dataSourse"/>

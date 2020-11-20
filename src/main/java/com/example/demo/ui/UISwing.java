@@ -1,5 +1,8 @@
-package com.example.demo;
+package com.example.demo.ui;
 
+
+import com.example.demo.Body.BodyDaoIml;
+import com.example.demo.image.ImageDaoImpl;
 
 import javax.swing.*;
 import java.awt.*;

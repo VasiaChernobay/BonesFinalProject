@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.image;
 
 public enum  ImageE {
     NECK(3),

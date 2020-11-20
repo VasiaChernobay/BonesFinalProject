@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.image;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
