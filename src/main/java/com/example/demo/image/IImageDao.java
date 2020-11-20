@@ -1,11 +1,11 @@
 package com.example.demo.image;
 
+import com.example.demo.testDao.TestDAOInpl;
+
 import java.sql.SQLException;
+import java.util.List;
 
 public interface IImageDao {
 
-   public String initImageDao1(ImageDaoImpl imageDao1) throws SQLException;
-   public String initImageDao2(ImageDaoImpl imageDao1) throws SQLException;
-   public String initImageDao3(ImageDaoImpl imageDao1) throws SQLException;
-   public String initImageDao4(ImageDaoImpl imageDao1) throws SQLException;
+    List<ImageDaoImpl> list();
 }

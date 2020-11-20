@@ -1,8 +1,8 @@
 package com.example.demo.ui;
 
 
-import com.example.demo.Body.BodyDaoIml;
 import com.example.demo.image.ImageDaoImpl;
+import com.example.demo.testDao.TestDAOInpl;
 
 import javax.swing.*;
 import java.awt.*;
@@ -49,7 +49,7 @@ public class UISwing extends JFrame implements ActionListener {
 
 
 
-    public UISwing(BodyDaoIml bodyDao1, BodyDaoIml bodyDao2, BodyDaoIml bodyDao3, BodyDaoIml bodyDao4, BodyDaoIml bodyDao5, BodyDaoIml bodyDao6, BodyDaoIml bodyDao7, BodyDaoIml bodyDao8, BodyDaoIml bodyDao9, BodyDaoIml bodyDao10, BodyDaoIml bodyDao11, BodyDaoIml bodyDao12, BodyDaoIml bodyDao13, BodyDaoIml bodyDao14, BodyDaoIml bodyDao15, BodyDaoIml bodyDao16, BodyDaoIml bodyDao17, BodyDaoIml bodyDao18, ImageDaoImpl imageDao1, ImageDaoImpl imageDao2, ImageDaoImpl imageDao3, ImageDaoImpl imageDao4) throws SQLException {
+    public UISwing(TestDAOInpl testDAOInpl, ImageDaoImpl imageDao1) throws SQLException {
 
         frame=new JFrame();
         frame1=new JFrame();
@@ -64,19 +64,19 @@ public class UISwing extends JFrame implements ActionListener {
         panel4=new JPanel();
 
         panel.setLayout(new GridLayout());
-        panel1.setLayout(new GridLayout());
-        panel2.setLayout(new GridBagLayout());
+        panel1.setLayout(new GridBagLayout());
+        panel2.setLayout(new GridLayout());
         panel3.setLayout(new GridLayout());
-        panel4.setLayout(new GridBagLayout());
+        panel4.setLayout(new GridLayout());
 
          ButtonInitActionListener1 buttonInitActionListener1=new ButtonInitActionListener1();
          ButtonInitActionListener2 buttonInitActionListener2=new ButtonInitActionListener2();
          ButtonInitActionListener4 buttonInitActionListener4=new ButtonInitActionListener4();
 
-        button1=new JButton(new ImageIcon(imageDao1.initImageDao1(imageDao1)));
-        button2=new JButton(new ImageIcon(imageDao2.initImageDao2(imageDao2)));
-        button3=new JButton(new ImageIcon(imageDao3.initImageDao3(imageDao3)));
-        button4=new JButton(new ImageIcon(imageDao4.initImageDao4(imageDao4)));
+        button1=new JButton(new ImageIcon(String.valueOf(imageDao1.list().get(0))));
+        button2=new JButton(new ImageIcon(String.valueOf(imageDao1.list().get(1))));
+        button3=new JButton(new ImageIcon(String.valueOf(imageDao1.list().get(2))));
+        button4=new JButton(new ImageIcon(String.valueOf(imageDao1.list().get(3))));
 
         button1.addActionListener(this);
         button2.addActionListener(buttonInitActionListener1);
@@ -96,22 +96,22 @@ public class UISwing extends JFrame implements ActionListener {
         frame.setSize(800, 600);
 
 
-        label1 =new JLabel(new ImageIcon(bodyDao1.initBodyDao1(bodyDao1)));
-        label2=new JLabel(new ImageIcon(bodyDao2.initBodyDao2(bodyDao2)));
-        label3=new JLabel(new ImageIcon(bodyDao3.initBodyDao3(bodyDao3)));
-        label4=new JLabel(new ImageIcon(bodyDao4.initBodyDao4(bodyDao4)));
-        label5=new JLabel(new ImageIcon(bodyDao5.initBodyDao5(bodyDao5)));
-        label6=new JLabel(new ImageIcon(bodyDao6.initBodyDao6(bodyDao6)));
-        label7=new JLabel(new ImageIcon(bodyDao7.initBodyDao7(bodyDao7)));
-        label8=new JLabel(new ImageIcon(bodyDao8.initBodyDao8(bodyDao8)));
-        label9=new JLabel(new ImageIcon(bodyDao9.initBodyDao9(bodyDao9)));
-        label10=new JLabel(new ImageIcon(bodyDao10.initBodyDao10(bodyDao10)));
-        label11=new JLabel(new ImageIcon(bodyDao11.initBodyDao11(bodyDao11)));
-        label12=new JLabel(new ImageIcon(bodyDao12.initBodyDao12(bodyDao12)));
-        label13=new JLabel(new ImageIcon(bodyDao13.initBodyDao12(bodyDao13)));
-        label14=new JLabel(new ImageIcon(bodyDao14.initBodyDao13(bodyDao14)));
-        label15=new JLabel(new ImageIcon(bodyDao15.initBodyDao14(bodyDao15)));
-        label16=new JLabel(new ImageIcon(bodyDao16.initBodyDao16(bodyDao16)));
+        label1 =new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(0))));
+        label2=new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(1))));
+        label3=new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(2))));
+        label4=new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(3))));
+        label5=new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(4))));
+        label6=new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(5))));
+        label7=new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(6))));
+        label8=new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(7))));
+        label9=new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(8))));
+        label10=new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(9))));
+        label11=new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(10))));
+        label12=new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(11))));
+        label13=new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(12))));
+        label14=new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(13))));
+        label15=new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(14))));
+        label16=new JLabel(new ImageIcon(String.valueOf(testDAOInpl.list().get(15))));
 
 
     }

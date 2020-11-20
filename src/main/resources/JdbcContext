@@ -14,37 +14,13 @@
 
         </bean>
 
-        <bean id ="bodyDAO" class="com.example.demo.Body.BodyDaoIml">
-            <property name="dataSource1" ref="dataSourse"/>
-            <property name="dataSource2" ref="dataSourse"/>
-            <property name="dataSource3" ref="dataSourse"/>
-            <property name="dataSource4" ref="dataSourse"/>
-            <property name="dataSource5" ref="dataSourse"/>
-            <property name="dataSource6" ref="dataSourse"/>
-            <property name="dataSource7" ref="dataSourse"/>
-            <property name="dataSource8" ref="dataSourse"/>
-            <property name="dataSource9" ref="dataSourse"/>
-            <property name="dataSource10" ref="dataSourse"/>
-            <property name="dataSource11" ref="dataSourse"/>
-            <property name="dataSource12" ref="dataSourse"/>
-            <property name="dataSource13" ref="dataSourse"/>
-            <property name="dataSource14" ref="dataSourse"/>
-            <property name="dataSource15" ref="dataSourse"/>
-            <property name="dataSource16" ref="dataSourse"/>
-            <property name="dataSource17" ref="dataSourse"/>
-            <property name="dataSource18" ref="dataSourse"/>
 
-        </bean>
     <bean id="imageDAO" class="com.example.demo.image.ImageDaoImpl">
         <property name="dataSource" ref="dataSourse"/>
-        <property name="dataSource2" ref="dataSourse"/>
-        <property name="dataSource3" ref="dataSourse"/>
-        <property name="dataSource4" ref="dataSourse"/>
-
 
     </bean>
-    <bean id="test" class="com.example.demo.testDao.TestDAOInpl">
+    <bean id="DAO" class="com.example.demo.testDao.TestDAOInpl">
         <property name="dataSource" ref="dataSourse"/>
+    </bean>
 
-            </bean>
     </beans>
