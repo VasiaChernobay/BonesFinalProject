@@ -42,7 +42,7 @@ id serial primary key,
 name varchar(100),
 imageUrl varchar(500)
 );
-insert into image(name,imageUrl)values('neck','src/main/resources/ImageResourse/neck.png');
-insert into image(name,imageUrl) values('back','src/main/resources/ImageResourse/back.png');
-insert into image(name,imageUrl) values('shoulder','src/main/resources/ImageResourse/shoulder.png');
+insert into image(name,imageUrl)values('back','src/main/resources/ImageResourse/back.png');
 insert into image(name,imageUrl) values('knee','src/main/resources/ImageResourse/knee.png');
+insert into image(name,imageUrl) values('neck','src/main/resources/ImageResourse/neck.png');
+insert into image(name,imageUrl) values('shoulder','src/main/resources/ImageResourse/shoulder.png');

@@ -1,10 +1,10 @@
 package com.example.demo;
 
 public enum  ImageE {
-    NECK(1),
-    KNEE(4),
-    SHOULDER(3),
-    BACK(2);
+    NECK(3),
+    KNEE(2),
+    SHOULDER(4),
+    BACK(1);
     private int id;
 
     public int getId() {

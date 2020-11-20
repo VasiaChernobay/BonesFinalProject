@@ -1,5 +1,6 @@
 package com.example.demo;
 
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -15,6 +16,7 @@ public class UISwing extends JFrame implements ActionListener {
     private JButton button1;
     private JButton button2;
     private JButton button3;
+    private JButton button4;
 
     private JFrame frame1;
     private JFrame frame2;
@@ -23,6 +25,7 @@ public class UISwing extends JFrame implements ActionListener {
     private JPanel panel1;
     private JPanel panel2;
     private JPanel panel3;
+    private JPanel panel4;
 
     private JLabel label2;
     private JLabel label3;
@@ -43,37 +46,45 @@ public class UISwing extends JFrame implements ActionListener {
 
 
 
-    UISwing(BodyDaoIml bodyDao1, BodyDaoIml bodyDao2, BodyDaoIml bodyDao3, BodyDaoIml bodyDao4, BodyDaoIml bodyDao5,BodyDaoIml bodyDao6,BodyDaoIml bodyDao7,BodyDaoIml bodyDao8,BodyDaoIml bodyDao9,BodyDaoIml bodyDao10,BodyDaoIml bodyDao11,BodyDaoIml bodyDao12,BodyDaoIml bodyDao13,BodyDaoIml bodyDao14,BodyDaoIml bodyDao15,BodyDaoIml bodyDao16,BodyDaoIml bodyDao17,BodyDaoIml bodyDao18,ImageDaoImpl imageDao1, ImageDaoImpl imageDao2, ImageDaoImpl imageDao3, ImageDaoImpl imageDao4) throws SQLException {
+    public UISwing(BodyDaoIml bodyDao1, BodyDaoIml bodyDao2, BodyDaoIml bodyDao3, BodyDaoIml bodyDao4, BodyDaoIml bodyDao5, BodyDaoIml bodyDao6, BodyDaoIml bodyDao7, BodyDaoIml bodyDao8, BodyDaoIml bodyDao9, BodyDaoIml bodyDao10, BodyDaoIml bodyDao11, BodyDaoIml bodyDao12, BodyDaoIml bodyDao13, BodyDaoIml bodyDao14, BodyDaoIml bodyDao15, BodyDaoIml bodyDao16, BodyDaoIml bodyDao17, BodyDaoIml bodyDao18, ImageDaoImpl imageDao1, ImageDaoImpl imageDao2, ImageDaoImpl imageDao3, ImageDaoImpl imageDao4) throws SQLException {
 
         frame=new JFrame();
         frame1=new JFrame();
         frame2=new JFrame();
         frame3=new JFrame();
+        frame4=new JFrame();
 
         panel=new JPanel();
         panel1=new JPanel();
         panel2=new JPanel();
         panel3=new JPanel();
+        panel4=new JPanel();
 
         panel.setLayout(new GridLayout());
         panel1.setLayout(new GridBagLayout());
         panel2.setLayout(new GridBagLayout());
         panel3.setLayout(new GridBagLayout());
+        panel4.setLayout(new GridBagLayout());
 
          ButtonInitActionListener1 buttonInitActionListener1=new ButtonInitActionListener1();
          ButtonInitActionListener2 buttonInitActionListener2=new ButtonInitActionListener2();
+         ButtonInitActionListener4 buttonInitActionListener4=new ButtonInitActionListener4();
 
         button1=new JButton(new ImageIcon(imageDao1.initImageDao1(imageDao1)));
         button2=new JButton(new ImageIcon(imageDao2.initImageDao2(imageDao2)));
         button3=new JButton(new ImageIcon(imageDao3.initImageDao3(imageDao3)));
+        button4=new JButton(new ImageIcon(imageDao4.initImageDao4(imageDao4)));
 
         button1.addActionListener(this);
         button2.addActionListener(buttonInitActionListener1);
         button3.addActionListener(buttonInitActionListener2);
+        button4.addActionListener(buttonInitActionListener4);
+
 
         panel.add(button1);
         panel.add(button2);
         panel.add(button3);
+        panel.add(button4);
 
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.add(panel);
@@ -108,12 +119,10 @@ public class UISwing extends JFrame implements ActionListener {
         frame1.setDefaultCloseOperation(EXIT_ON_CLOSE);
         frame1.setLocation(300,300);
         frame1.add(panel1);
-        panel1.add(label1);
-        panel1.add(label2);
-        panel1.add(label3);
-        panel1.add(label4);
-        panel1.add(label5);
-        panel1.add(label6);
+        panel1.add(label10);
+        panel1.add(label11);
+        panel1.add(label12);
+        panel1.add(label13);
 
     }
 
@@ -131,9 +140,12 @@ public class UISwing extends JFrame implements ActionListener {
             frame2.setLocation(300,300);
 
             frame2.add(panel2);
-            panel2.add(label7);
-            panel2.add(label8);
-            panel2.add(label9);
+            panel2.add(label1);
+            panel2.add(label2);
+            panel2.add(label3);
+            panel2.add(label4);
+            panel2.add(label5);
+            panel2.add(label6);
         }
     }
     class ButtonInitActionListener2 implements ActionListener{
@@ -146,12 +158,27 @@ public class UISwing extends JFrame implements ActionListener {
             frame3.setVisible(true);
 
        frame3.add(panel3);
-       panel3.add(label10);
-       panel3.add(label11);
-       panel3.add(label12);
+       panel3.add(label14);
+       panel3.add(label15);
+       panel3.add(label16);
 
         }
     }
+    class ButtonInitActionListener4 implements ActionListener{
 
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+            frame4.setDefaultCloseOperation(EXIT_ON_CLOSE);
+            frame4.setSize(800,600);
+            frame4.setVisible(true);
+
+            frame4.add(panel4);
+            panel4.add(label7);
+            panel4.add(label8);
+            panel4.add(label9);
+
+        }
+    }
 
 }

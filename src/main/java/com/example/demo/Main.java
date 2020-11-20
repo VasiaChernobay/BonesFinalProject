@@ -1,5 +1,6 @@
 package com.example.demo;
 
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.swing.*;
@@ -43,10 +44,11 @@ public class Main {
         JFrame frame=new JFrame();
 
 
-       imageDao1.setId(ImageE.BACK.getId());
-       imageDao2.setId2(ImageE.KNEE.getId());
-       imageDao3.setId3(ImageE.SHOULDER.getId());
-       imageDao4.setId4(ImageE.NECK.getId());
+     imageDao1.setId(ImageE.BACK.getId());
+     imageDao1.setId2(ImageE.KNEE.getId());
+     imageDao3.setId3(ImageE.NECK.getId());
+     imageDao4.setId4(ImageE.SHOULDER.getId());
+
 
       bodyDao1.setId(BodyE.KNEE1.getId());
       bodyDao2.setId2(BodyE.KNEE2.getId());
@@ -68,8 +70,6 @@ public class Main {
 
 
         System.out.println(bodyDao1.initBodyDao1(bodyDao1));
-
-
 
 
         UISwing uiSwing=new UISwing(bodyDao1,bodyDao2,bodyDao3,bodyDao4,bodyDao5,bodyDao6,bodyDao7,bodyDao8,bodyDao9,bodyDao10,bodyDao11,bodyDao12,bodyDao13,bodyDao14,bodyDao15,bodyDao16,bodyDao17,bodyDao18,imageDao1,imageDao2,imageDao3,imageDao4);

@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class ImageDaoImpl implements IImageDao{
+public class ImageDaoImpl implements IImageDao {
     private  int id;
     private  int id2;
     private  int id3;

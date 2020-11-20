@@ -1,7 +1,5 @@
 package com.example.demo;
 
-import org.springframework.jdbc.object.SqlCall;
-
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -9,17 +7,73 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class BodyDaoIml implements IBodyDao {
-    private DataSource dataSource1;
-    private DataSource dataSource2;
-    private DataSource dataSource3;
-    private DataSource dataSource4;
-    private DataSource dataSource5;
-    private DataSource dataSource6;
-    private DataSource dataSource7;
-    private DataSource dataSource8;
-    private DataSource dataSource9;
-    private DataSource dataSource10;
-    private DataSource dataSource11;
+
+
+   private DataSource dataSource1;
+   private DataSource dataSource2;
+   private DataSource dataSource3;
+   private DataSource dataSource4;
+   private DataSource dataSource5;
+   private DataSource dataSource6;
+   private DataSource dataSource7;
+   private DataSource dataSource8;
+   private DataSource dataSource9;
+   private DataSource dataSource10;
+   private DataSource dataSource11;
+   private DataSource dataSource12;
+   private DataSource dataSource13;
+   private DataSource dataSource14;
+   private DataSource dataSource15;
+   private DataSource dataSource16;
+   private DataSource dataSource17;
+
+    public DataSource getDataSource1() {
+        return dataSource1;
+    }
+
+    public void setDataSource1(DataSource dataSource1) {
+        this.dataSource1 = dataSource1;
+    }
+
+    public DataSource getDataSource2() {
+        return dataSource2;
+    }
+
+    public void setDataSource2(DataSource dataSource2) {
+        this.dataSource2 = dataSource2;
+    }
+
+    public DataSource getDataSource3() {
+        return dataSource3;
+    }
+
+    public void setDataSource3(DataSource dataSource3) {
+        this.dataSource3 = dataSource3;
+    }
+
+    public DataSource getDataSource4() {
+        return dataSource4;
+    }
+
+    public void setDataSource4(DataSource dataSource4) {
+        this.dataSource4 = dataSource4;
+    }
+
+    public DataSource getDataSource5() {
+        return dataSource5;
+    }
+
+    public void setDataSource5(DataSource dataSource5) {
+        this.dataSource5 = dataSource5;
+    }
+
+    public DataSource getDataSource6() {
+        return dataSource6;
+    }
+
+    public void setDataSource6(DataSource dataSource6) {
+        this.dataSource6 = dataSource6;
+    }
 
     public DataSource getDataSource7() {
         return dataSource7;
@@ -117,29 +171,9 @@ public class BodyDaoIml implements IBodyDao {
         this.dataSource18 = dataSource18;
     }
 
-    private DataSource dataSource12;
-    private DataSource dataSource13;
-    private DataSource dataSource14;
-    private DataSource dataSource15;
-    private DataSource dataSource16;
-    private DataSource dataSource17;
     private DataSource dataSource18;
 
-    public DataSource getDataSource5() {
-        return dataSource5;
-    }
 
-    public void setDataSource5(DataSource dataSource5) {
-        this.dataSource5 = dataSource5;
-    }
-
-    public DataSource getDataSource6() {
-        return dataSource6;
-    }
-
-    public void setDataSource6(DataSource dataSource6) {
-        this.dataSource6 = dataSource6;
-    }
 
     private int id;
     private int id2;
@@ -318,37 +352,6 @@ public class BodyDaoIml implements IBodyDao {
         this.url6 = url6;
     }
 
-    public DataSource getDataSource1() {
-        return dataSource1;
-    }
-
-    public void setDataSource1(DataSource dataSource1) {
-        this.dataSource1 = dataSource1;
-    }
-
-    public DataSource getDataSource2() {
-        return dataSource2;
-    }
-
-    public void setDataSource2(DataSource dataSource2) {
-        this.dataSource2 = dataSource2;
-    }
-
-    public DataSource getDataSource3() {
-        return dataSource3;
-    }
-
-    public void setDataSource3(DataSource dataSource3) {
-        this.dataSource3 = dataSource3;
-    }
-
-    public DataSource getDataSource4() {
-        return dataSource4;
-    }
-
-    public void setDataSource4(DataSource dataSource4) {
-        this.dataSource4 = dataSource4;
-    }
 
     public int getId() {
         return id;
