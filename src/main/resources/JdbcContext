@@ -43,8 +43,8 @@
 
 
     </bean>
-<!--    <bean id="body" class="com.example.demo.Body">-->
-<!--        <property name="id" value="1"/>-->
+    <bean id="test" class="com.example.demo.testDao.TestDAOInpl">
+        <property name="dataSource" ref="dataSourse"/>
 
-<!--            </bean>-->
+            </bean>
     </beans>

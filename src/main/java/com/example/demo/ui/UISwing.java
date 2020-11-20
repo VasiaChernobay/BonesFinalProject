@@ -64,9 +64,9 @@ public class UISwing extends JFrame implements ActionListener {
         panel4=new JPanel();
 
         panel.setLayout(new GridLayout());
-        panel1.setLayout(new GridBagLayout());
+        panel1.setLayout(new GridLayout());
         panel2.setLayout(new GridBagLayout());
-        panel3.setLayout(new GridBagLayout());
+        panel3.setLayout(new GridLayout());
         panel4.setLayout(new GridBagLayout());
 
          ButtonInitActionListener1 buttonInitActionListener1=new ButtonInitActionListener1();

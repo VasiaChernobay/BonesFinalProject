@@ -27,7 +27,7 @@ values ( 'back','src/main/resources/Gif/back1.gif' );
 insert into BodyParts ( name, urlgif)
 values ( 'back','src/main/resources/Gif/back2.gif' );
 insert into BodyParts ( name, urlgif)
-values ( 'back', 'ssrc/main/resources/Gif/back3.gif');
+values ( 'back', 'src/main/resources/Gif/back3.gif');
 insert into BodyParts ( name, urlgif)
 values ( 'back', 'src/main/resources/Gif/back4.gif');
 insert into BodyParts ( name, urlgif)
